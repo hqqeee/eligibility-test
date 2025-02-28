@@ -13,6 +13,9 @@ Before starting, ensure you have the following installed on your machine:
 
 ### 1. Initialize the SQLite Database
 ```bash
+mkdir -p src/main/resources/db
+```
+```bash
 sqlite3 src/main/resources/db/eligibility.db < data.sql
 ```
 This will run the data.sql script to create the necessary tables and insert some sample data into the database.
