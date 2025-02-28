@@ -33,6 +33,6 @@ docker run -p 8080:8080 eligibility:0.0.1-SNAPSHOT
 ```
 ### 4. Test application
 ```bash
-curl -X GET "http://localhost:8080/api/eligibility/check?employe_code=123&member_status=employee&employee_id=44000100&employee_date_of_birth=1979-01-09" \
--H "Authorization: Bearer eligibility"
+curl -X GET "curl -X GET "http://localhost:8080/api/eligibility/check?employe_code=123&member_status=employee&employee_id=44000100&employee_date_of_birth=1979-01-09" \
+      -H "Authorization: Bearer eligibility" -w "\nHTTP Status Code: %{http_code}"
 ```
